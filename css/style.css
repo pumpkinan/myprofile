@@ -1,0 +1,243 @@
+
+
+#header{
+	background-attachment: scroll, scroll, fixed;
+	background-image: url(images/top-3200.svg), url(images/overlay.png), url(../img/header.jpg);
+	background-position: bottom center, 	top center, 	center center;
+	background-repeat: repeat-x,	repeat,		no-repeat;
+	background-size: 3200px 460px, auto, cover;
+	z-index: -2;
+	color: rgba(255,255,255,0.8);
+	padding: 10em 0 20em 0;
+	position: relative;
+}
+
+#header img{
+	width: 100px; 
+	height: 100px;
+}
+
+#header h1{
+	padding-top: 0.8em;
+	font-size: 40px;
+	color: white;
+}
+
+#header h2{
+	padding-top: 3px;
+	line-height: 1.4em;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+#header:before{
+	background: rgba(224, 224, 224, 0.75);
+	content: "";
+	left: 50%;
+	position: absolute;
+	width: 1px;
+	z-index: -1;
+	top: 0;
+	opacity: 0.5;
+	height: calc(100%);
+}
+
+#main{
+	position: relative;
+	padding-top: 1em;
+}
+
+#main:before{
+	background: rgba(224, 224, 224, 0.75);
+	content: "";
+	height: 100%;
+	left: 50%;
+	position: absolute;
+	top: 0;
+	width: 1px;
+	z-index: -1;
+}
+
+#main h3{
+	padding: 3em 2em;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-color: rgba(224, 224, 224, 0.75);
+	border-style: solid;
+	border-right-style: none;
+	border-left-style: none;
+	font-size: 27px;
+	line-height: 1.3em;
+	color: rgb(91, 91, 91);
+	display: block;
+	position: relative;
+	margin-left: 22%;
+	margin-right: 22%;
+	background: white;
+	z-index: 0;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+#main h3:before{
+	background-color: rgba(224, 224, 224, 0.75);
+	content: "";
+	display: block;    /* 块级元素 */
+	position: absolute;
+	top: 10px;
+	left: 0; 
+	width: 100%;
+	height: 1px;
+}
+
+#main h3:after{
+	background-color: rgba(224, 224, 224, 0.75);
+	content: "";
+	display: block;    /* 块级元素 */
+	position: absolute;
+	bottom: 10px;
+	left: 0; 
+	width: 100%;
+	height: 1px;
+}
+
+#main .row .col-md-6{
+	padding: 0;
+	margin: 0;
+}
+
+#main a img{
+	height: 90%;
+}
+
+#main a:after{
+	transition: opacity 0.25s ease-in-out;
+	background-image: url(images/overlay.png);
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	opacity: 0.2;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#main a:hover:after{
+	opacity: 1;
+}
+
+#main .fa{
+	perspective: 500px;
+}
+
+#main .fa:before{
+	-moz-transition: transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
+	-webkit-transition: transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
+	-o-transition: transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
+	-ms-transition: transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
+	transition: transform 0.1s ease-in-out, font-size 0.1s ease-in-out;
+	color: white;
+	position: absolute;
+	font-size: 8em;
+	height: 1em;
+	width: 1em;
+	line-height: 1em;
+	margin: -0.5em 0 0 -0.5em;
+	top: 50%;
+	left: 50%;
+	text-align: center;
+	z-index: 1;
+}
+
+#main .fa:hover:before{
+	-moz-transform: translateZ(1em);
+	-webkit-transform: translateZ(1em);
+	-o-transform: translateZ(1em);
+	-ms-transform: translateZ(1em);
+	transform: translateZ(1em);
+}
+
+#main .row .col-md-4{
+	padding: 0 30px;
+}
+
+#main .page-header h1{
+	margin-top: 25%;
+}
+
+#footer{
+	background-image: url(images/bottom-3200.svg);
+	background-size: 1600px 230px;
+	margin-top: -81px;
+	padding: calc(230px + 4em) 0 4em 0;
+	background-attachment: scroll;
+	background-color: #4eb980;
+	background-position: top center;
+	background-repeat: repeat-x;
+	color: rgb(255, 255, 255);
+	position: relative;
+}
+
+#footer:before{
+	background: rgba(224, 224, 224, 0.75);
+    content: '';
+    height: calc(203px + 6em);
+    left: 50%;
+    position: absolute;
+    top: 0;
+    width: 1px;
+    z-index: 0;
+}
+
+#footer h1{
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-color: rgba(224, 224, 224, 0.75);
+	padding-top: 2em;
+	margin: 0 22%;
+	position: relative;
+}
+
+#footer h1:before{
+	background: rgba(224, 224, 224, 0.75);
+    content: '';
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+}
+
+#footer p{
+	line-height: 1.5em;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+#footer li{
+	display: inline-block;
+	border-style: none;
+	background: none;
+}
+
+#footer li a{
+	text-decoration: none;
+}
+
+#footer .list-group{
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+#footer .icon{
+	font-family: FontAwesome;
+	color: inherit;
+	font-size: 2em;
+	text-align: center;
+}
+
+#footer .copyright a{
+	background: op;
+	text-decoration: none;
+	color: inherit;
+}
